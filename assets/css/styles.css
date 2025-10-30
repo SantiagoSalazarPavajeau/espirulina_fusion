@@ -237,6 +237,18 @@ img {
 .hero-image img {
   border-radius: var(--radius-xl);
   box-shadow: 0 40px 60px rgba(15, 123, 108, 0.18);
+<<<<<<< ours
+<<<<<<< ours
+=======
+  width: 100%;
+  max-width: 420px;
+  margin-left: auto;
+>>>>>>> theirs
+=======
+  width: 100%;
+  max-width: 420px;
+  margin-left: auto;
+>>>>>>> theirs
 }
 
 section {
@@ -264,9 +276,39 @@ section h2 {
   box-shadow: var(--shadow-soft);
 }
 
+<<<<<<< ours
+<<<<<<< ours
 .trust-card h3 {
   margin-top: 1.5rem;
   margin-bottom: 0.8rem;
+=======
+=======
+>>>>>>> theirs
+.trust-card figure {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.trust-card img {
+  width: min(100%, 260px);
+  border-radius: var(--radius-md);
+  box-shadow: 0 18px 40px rgba(15, 123, 108, 0.18);
+}
+
+.trust-card figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.trust-card h3 {
+  margin: 0;
+<<<<<<< ours
+>>>>>>> theirs
+=======
+>>>>>>> theirs
 }
 
 .trust-card p {
@@ -363,6 +405,29 @@ section h2 {
   padding: 1.5rem;
 }
 
+<<<<<<< ours
+<<<<<<< ours
+=======
+=======
+>>>>>>> theirs
+.ingredient-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  background: rgba(15, 123, 108, 0.08);
+}
+
+.ingredient-icon svg {
+  width: 56px;
+  height: 56px;
+}
+
+<<<<<<< ours
+>>>>>>> theirs
+=======
+>>>>>>> theirs
 .ingredient-card h3 {
   margin: 1.3rem 0 0.7rem;
 }
@@ -371,6 +436,137 @@ section h2 {
   color: var(--color-muted);
 }
 
+<<<<<<< ours
+<<<<<<< ours
+=======
+=======
+>>>>>>> theirs
+.presentations {
+  padding: 5rem 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(227, 244, 240, 0.95));
+}
+
+.presentations .section-header {
+  max-width: 740px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.presentations .section-header h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  margin-bottom: 1rem;
+}
+
+.presentations .section-header p {
+  color: var(--color-muted);
+}
+
+.presentation-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.presentation-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 1.8rem 1.6rem 2rem;
+  box-shadow: 0 25px 50px -18px rgba(15, 123, 108, 0.28);
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.presentation-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px -18px rgba(15, 123, 108, 0.35);
+}
+
+.presentation-card img {
+  width: min(100%, 260px);
+  margin: 0 auto;
+  border-radius: var(--radius-md);
+  box-shadow: 0 18px 40px rgba(15, 123, 108, 0.14);
+  background: var(--color-bg);
+}
+
+.presentation-body h3 {
+  font-size: 1.45rem;
+  margin-bottom: 0.6rem;
+  color: var(--color-primary);
+}
+
+.presentation-body p {
+  color: var(--color-muted);
+}
+
+.presentation-body ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.presentation-body li {
+  position: relative;
+  padding-left: 1.5rem;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.presentation-body li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  background: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(15, 123, 108, 0.12);
+}
+
+.instagram {
+  padding: 5rem 0;
+}
+
+.instagram-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.instagram-header p {
+  color: var(--color-muted);
+  max-width: 520px;
+}
+
+.instagram-embed {
+  position: relative;
+  width: 100%;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+  min-height: 540px;
+}
+
+.instagram-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+<<<<<<< ours
+>>>>>>> theirs
+=======
+>>>>>>> theirs
 .product-showcase .container {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -563,6 +759,33 @@ section h2 {
   section {
     padding: 4rem 0;
   }
+<<<<<<< ours
+<<<<<<< ours
+=======
+=======
+>>>>>>> theirs
+
+  .instagram-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .presentation-card {
+    align-items: center;
+    text-align: center;
+  }
+
+  .presentation-body li {
+    padding-left: 0;
+  }
+
+  .presentation-body li::before {
+    display: none;
+  }
+<<<<<<< ours
+>>>>>>> theirs
+=======
+>>>>>>> theirs
 }
 
 @media (max-width: 576px) {
@@ -579,6 +802,19 @@ section h2 {
     left: 1rem;
   }
 
+<<<<<<< ours
+<<<<<<< ours
+=======
+=======
+>>>>>>> theirs
+  .instagram-embed {
+    min-height: 480px;
+  }
+
+<<<<<<< ours
+>>>>>>> theirs
+=======
+>>>>>>> theirs
   .floating-whatsapp {
     left: 1.2rem;
     right: 1.2rem;

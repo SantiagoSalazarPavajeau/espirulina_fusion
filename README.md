@@ -47,3 +47,17 @@ Este proyecto ya incluye un `netlify.toml` con la configuración mínima para pu
    ```
 
 La configuración fija la versión de Node 18 y aplica una redirección 200 para servir `index.html` ante cualquier ruta.
+
+### Despliegues automatizados con GitHub Actions
+
+Este repositorio incluye un flujo de trabajo en `.github/workflows/netlify-deploy.yml` que publica automáticamente el sitio en Netlify:
+
+1. Genera un [token personal de Netlify](https://docs.netlify.com/cli/get-started/#obtain-a-token) y obtén el `Site ID` desde la configuración del sitio.
+2. En GitHub, crea dos secretos de repositorio:
+   - `NETLIFY_AUTH_TOKEN`: el token obtenido en el paso anterior.
+   - `NETLIFY_SITE_ID`: el identificador único del sitio en Netlify.
+3. Una vez configurados los secretos:
+   - Cada _pull request_ dispara un **deploy preview** para validar cambios antes de fusionarlos.
+   - Cada push a la rama `main` publica automáticamente en producción (`netlify deploy --prod`).
+
+Puedes revisar los enlaces generados en la pestaña **Actions** del repositorio luego de cada ejecución.
